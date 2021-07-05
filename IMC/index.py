@@ -4,7 +4,7 @@ peso = float(input('{} , qual seu peso? (KG) '.format(nome)))
 altura = float(input('{} qual sua altura? (M) '.format(nome)))
 imc = peso / (altura * altura)
 pesoIdealMninimo = 18.5 * (altura ** 2)
-pesoIdealMaximo = 25 * (altura * 2)
+pesoIdealMaximo = 25 * (altura ** 2)
 if imc < 18.5:
     print('{}, seu imc é {:.1f}, você está abaixo do peso'.format(nome, imc))
     print('Seu peso ideal é entre {:.1f} e {:.1f}'.format(pesoIdealMninimo, pesoIdealMaximo))
